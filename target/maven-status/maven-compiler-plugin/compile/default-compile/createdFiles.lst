@@ -1,4 +1,9 @@
-ec\edu\espoch\poryectointegrador\SecondaryController.class
-ec\edu\espoch\poryectointegrador\App.class
+ec\edu\espoch\poryectointegrador\dao\SemanaDao.class
 module-info.class
-ec\edu\espoch\poryectointegrador\PrimaryController.class
+ec\edu\espoch\poryectointegrador\controlador\PrimaryController.class
+ec\edu\espoch\poryectointegrador\controlador\SecondaryController.class
+ec\edu\espoch\poryectointegrador\modelo\Derivada.class
+ec\edu\espoch\poryectointegrador\App.class
+ec\edu\espoch\poryectointegrador\modelo\Semana.class
+ec\edu\espoch\poryectointegrador\controlador\TertiaryController.class
+ec\edu\espoch\poryectointegrador\modelo\ResultadoDao.class

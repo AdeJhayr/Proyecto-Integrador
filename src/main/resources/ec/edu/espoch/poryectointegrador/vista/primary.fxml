@@ -5,13 +5,39 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="282.0" prefWidth="293.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espoch.poryectointegrador.PrimaryController">
-   <children>
-      <Label text="Primary View" />
-      <Button fx:id="derivacionSemanal" onAction="#switchToSecondary" text="Nuevo" />
-      <Button fx:id="salir" mnemonicParsing="false" onAction="#salir" text="Salir" />
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
+<VBox alignment="CENTER"
+      spacing="18"
+      prefWidth="300"
+      prefHeight="280"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ec.edu.espoch.poryectointegrador.controlador.PrimaryController"
+      style="-fx-background-color: #f4f6f8;">
+
+    <padding>
+        <Insets top="25" bottom="25" left="25" right="25"/>
+    </padding>
+
+    <Label text="Proyecto Integrador"
+           style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+
+    <Button fx:id="derivacionSemanal"
+            text="Nueva Semana"
+            prefWidth="180"
+            prefHeight="38"
+            onAction="#switchToSecondary"/>
+
+    <Button fx:id="BTLista"
+            text="Ver Lista"
+            prefWidth="180"
+            prefHeight="38"
+            onAction="#lista"/>
+
+    <Button fx:id="salir"
+            text="Salir"
+            prefWidth="180"
+            prefHeight="38"
+            onAction="#salir"
+            style="-fx-background-color: #e57373; -fx-text-fill: white;"/>
+
 </VBox>
