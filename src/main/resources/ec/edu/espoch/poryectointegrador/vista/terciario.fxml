@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0"
+            prefWidth="600.0"
+            style="-fx-background-color: #F4F6F8;"
+            xmlns="http://javafx.com/javafx/13"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ec.edu.espoch.poryectointegrador.controladorr.TerciarioController">
+
+    <children>
+
+        <!-- TÍTULO -->
+        <Label layoutX="200.0"
+               layoutY="20.0"
+               text="Análisis de Presupuesto Semanal"
+               style="-fx-font-size: 16px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #1E3A5F;" />
+
+        <!-- PRESUPUESTO -->
+        <Label layoutX="30.0" layoutY="70.0" text="Presupuesto:" />
+        <TextField fx:id="TXTPresupuesto"
+                   layoutX="120.0"
+                   layoutY="66.0"
+                   promptText="Presupuesto"
+                   style="-fx-background-radius: 8;
+                          -fx-border-radius: 8;
+                          -fx-border-color: #CBD5E1;" />
+
+        <!-- SEMANA -->
+        <Label fx:id="LBSemana"
+               layoutX="30.0"
+               layoutY="110.0"
+               text="Semana 1"
+               style="-fx-font-weight: bold;" />
+
+        <!-- INGRESO -->
+        <TextField fx:id="TXTIngreso"
+                   layoutX="120.0"
+                   layoutY="106.0"
+                   promptText="Ingreso"
+                   style="-fx-background-radius: 8;
+                          -fx-border-radius: 8;
+                          -fx-border-color: #CBD5E1;" />
+
+        <!-- GASTOS -->
+        <TextField fx:id="TXTGastos"
+                   layoutX="300.0"
+                   layoutY="106.0"
+                   promptText="Gastos"
+                   style="-fx-background-radius: 8;
+                          -fx-border-radius: 8;
+                          -fx-border-color: #CBD5E1;" />
+
+        <!-- BOTONES -->
+        <Button fx:id="BTGuardar"
+                layoutX="120.0"
+                layoutY="150.0"
+                text="Guardar"
+                onAction="#guardar"
+                style="-fx-background-color: #2563EB;
+                       -fx-text-fill: white;
+                       -fx-background-radius: 8;" />
+
+        <Button fx:id="BTAnalizar"
+                layoutX="230.0"
+                layoutY="150.0"
+                text="Analizar"
+                onAction="#analizar"
+                style="-fx-background-color: #1E40AF;
+                       -fx-text-fill: white;
+                       -fx-background-radius: 8;" />
+
+        <!-- LISTA -->
+        <ListView fx:id="LTLista"
+                  layoutX="40.0"
+                  layoutY="200.0"
+                  prefHeight="160.0"
+                  prefWidth="520.0"
+                  style="-fx-background-radius: 8;
+                         -fx-border-radius: 8;" />
+
+        <!-- RESULTADO -->
+        <Label fx:id="LBRespuesta"
+               layoutX="300.0"
+               layoutY="70.0"
+               text="Resultado del análisis"
+               style="-fx-text-fill: #1E3A5F;
+                      -fx-font-weight: bold;" />
+
+        <!-- NAVEGACIÓN -->
+        <Button fx:id="BTRegresar"
+                layoutX="40.0"
+                layoutY="20.0"
+                text="Regresar"
+                onAction="#regresar"
+                style="-fx-background-color: #64748B;
+                       -fx-text-fill: white;
+                       -fx-background-radius: 8;" />
+
+        <Button fx:id="BTInformacion"
+                layoutX="480.0"
+                layoutY="20.0"
+                text="Información"
+                onAction="#informacion"
+                style="-fx-background-color: #2563EB;
+                       -fx-text-fill: white;
+                       -fx-background-radius: 8;" />
+
+    </children>
+</AnchorPane>
